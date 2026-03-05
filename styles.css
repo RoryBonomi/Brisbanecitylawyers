@@ -46,7 +46,8 @@ h1, h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: # #004080;
+  color: white;
 }
 
 /* Responsive */
