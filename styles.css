@@ -35,7 +35,11 @@ header h1 {
   font-size: 1.8rem;
   margin: 0;
 }
-
+.site-title {
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
 /* NEW — controls logo size so header isn't huge */
 .logo {
   height: 40px;
