@@ -7,7 +7,7 @@ body, html {
   background: #f9f9f9;
 }
 
-/* Header */
+/* Header adjustments */
 header {
   display: flex;
   align-items: center;
@@ -17,25 +17,24 @@ header {
   color: white;
 }
 
-header .logo {
-  height: 60px;
-  margin-right: 15px;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* space between logo and title */
 }
 
-header nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
-/* Skyline image */
+/* Reduce skyline height */
 .skyline img {
   width: 100%;
-  height: auto;
+  max-height: 300px;  /* smaller height */
+  object-fit: cover;  /* crops nicely without stretching */
   display: block;
 }
-
 /* Hero text overlay (optional, if you use hero-text) */
 .hero-text {
   position: absolute;
