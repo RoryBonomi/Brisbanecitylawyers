@@ -28,13 +28,19 @@ header h1 {
   margin: 0;
 }
 
+/* NEW — controls logo size so header isn't huge */
+.logo {
+  height: 40px;
+}
+
 /* Reduce skyline height */
 .skyline img {
   width: 100%;
-  max-height: 300px;  /* smaller height */
-  object-fit: cover;  /* crops nicely without stretching */
+  max-height: 300px;
+  object-fit: cover;
   display: block;
 }
+
 /* Hero text overlay (optional, if you use hero-text) */
 .hero-text {
   position: absolute;
@@ -71,7 +77,7 @@ h1, h2 {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #004080; /* match header */
+  background-color: #004080;
   color: white;
 }
 
