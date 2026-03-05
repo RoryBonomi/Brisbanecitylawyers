@@ -1,8 +1,10 @@
-/* Reset */
+/* General reset */
 body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
 }
 
 /* Header */
@@ -34,23 +36,108 @@ header nav a {
   display: block;
 }
 
+/* Hero text overlay (optional, if you use hero-text) */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  margin-top: 10px;
+}
+
 /* Main content */
 main {
   padding: 40px 50px;
 }
 
+/* Headings */
 h1, h2 {
   color: #004080;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: # #004080;
+  background-color: #004080; /* match header */
   color: white;
 }
 
-/* Responsive */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 1em;
+}
+
+button {
+  background: #004080;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #003366;
+}
+
+/* About section */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Reverse layout for certain about sections */
+.about-container.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -62,5 +149,14 @@ footer {
   header nav a {
     margin-left: 0;
     margin-right: 15px;
+  }
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .about-container {
+    flex-direction: column;
   }
 }
