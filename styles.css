@@ -28,7 +28,7 @@ header nav a:hover {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 15px; /* space between logo and title */
+  gap: 15px;
 }
 
 header h1 {
@@ -40,20 +40,32 @@ header h1 {
   text-align: center;
   color: white;
 }
-/* NEW — controls logo size so header isn't huge */
+
+/* Logo size */
 .logo {
   height: 40px;
 }
 
-/* Reduce skyline height */
+/* Skyline section */
+.skyline {
+  position: relative;
+}
+
 .skyline img {
   width: 100%;
-  max-height: 300px;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
-/* Hero text overlay (optional, if you use hero-text) */
+/* QLD logo on skyline image */
+.skyline-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+}
+
+/* Hero text overlay */
 .hero-text {
   position: absolute;
   top: 50%;
