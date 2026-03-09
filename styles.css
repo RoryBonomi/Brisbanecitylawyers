@@ -51,7 +51,7 @@ header h1 {
   position: relative;
 }
 
-.skyline img {
+.skyline > img:first-child {
   width: 100%;
   height: auto;
   display: block;
