@@ -15,6 +15,7 @@ header {
   padding: 20px 50px;
   background-color: #004080;
   color: white;
+  border-bottom: 4px solid #d4af37; /* Gold accent line */
 }
 
 .site-title {
@@ -45,22 +46,22 @@ header nav a:hover {
   display: block;
 }
 
-/* Overlay for readability */
+/* Lighter overlay */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.25);
+  background: rgba(0,0,0,0.15);
   pointer-events: none;
 }
 
-/* QLD logo */
+/* QLD logo top-left */
 .skyline-logo {
   position: absolute;
   top: 25px;
-  right: 25px;
+  left: 25px;
   height: 90px;
   width: auto;
   z-index: 3;
