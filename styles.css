@@ -66,8 +66,8 @@ header nav a:hover {
 /* QLD logo top-left */
 .skyline-logo {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 35px;
+  left: 35px;
   height: 160px;
   width: auto;
   z-index: 3;
