@@ -7,7 +7,7 @@ body, html {
   background: #f9f9f9;
 }
 
-/* Header adjustments */
+/* Header */
 header {
   display: flex;
   align-items: center;
@@ -16,37 +16,25 @@ header {
   background-color: #004080;
   color: white;
 }
+
+.site-title {
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+
 header nav a {
   color: white;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 25px;
   font-weight: bold;
 }
+
 header nav a:hover {
   text-decoration: underline;
 }
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 
-header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-.site-title {
-  flex-grow: 1;
-  text-align: center;
-  color: white;
-}
-
-/* Logo size */
-.logo {
-  height: 40px;
-}
-
-/* Skyline section */
+/* Skyline hero section */
 .skyline {
   position: relative;
 }
@@ -57,44 +45,49 @@ header h1 {
   display: block;
 }
 
-/* Dark overlay for readability */
+/* Overlay for readability */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.25);
+  pointer-events: none;
 }
 
-/* QLD logo on skyline image */
+/* QLD logo */
 .skyline-logo {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 60px;
+  top: 25px;
+  right: 25px;
+  height: 90px;
+  width: auto;
+  z-index: 3;
 }
 
-/* Hero text overlay */
+/* Hero text */
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  z-index: 2;
 }
 
 .hero-text h2 {
+  color: white;
   font-size: 3rem;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
   margin: 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .hero-text p {
+  color: white;
   font-size: 1.2rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
 /* Main content */
@@ -171,31 +164,37 @@ button:hover {
   max-width: 400px;
 }
 
-/* Reverse layout for certain about sections */
 .about-container.reverse {
   flex-direction: row-reverse;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
+
   header {
     flex-direction: column;
     align-items: flex-start;
   }
+
   header nav {
     margin-top: 10px;
   }
+
   header nav a {
     margin-left: 0;
     margin-right: 15px;
   }
+
   .hero-text h2 {
     font-size: 2rem;
   }
+
   .hero-text p {
     font-size: 1rem;
   }
+
   .about-container {
     flex-direction: column;
   }
+
 }
